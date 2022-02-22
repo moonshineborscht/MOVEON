@@ -1,0 +1,29 @@
+/* Кнопошки */
+.button {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 53px;
+    font-size: 17px;
+    line-height: 21px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.button:hover { 
+    background: #FFFFFF;
+    color:  #A658DB;
+}
+
+.button:hover svg path {
+    fill:currentColor;
+}
+
+@media (max-width: 768px) {
+    .button {
+
+    }
+}

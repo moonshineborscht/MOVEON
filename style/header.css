@@ -1,0 +1,84 @@
+.header {
+	font-family: 'DM Sans', sans-serif;
+	display: flex;
+	height: 150px;
+}
+
+/* Все содержимое в шапке */
+.header .container .header-row {
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Лого в шапке */
+.header .container .header-row .logo-link {
+	width: 100%;
+	max-width: 160px;
+}
+
+/* Навигация в шапке */
+.header .container .link-wrapper {
+	display: flex;
+	width: 100%;
+	max-width: 700px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .container .link-wrapper .link {
+    font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/* Социальные сети в шапке */
+.header .container .link-wrapper .link-social {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.header .container .link-wrapper .link-social .img { object-fit: none; }
+
+.header .container .link-wrapper .link-social:hover { background-color: transparent; }
+
+.header .container .link-wrapper .link-social .img:hover { filter: brightness(300%); }
+
+/* Бургер в шапке */
+.burger {
+	display: none;
+}
+
+
+@media (max-width: 768px) {
+	.header .container .header-row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		margin: 22px 20px;
+	}
+	.header .container .link-wrapper {
+		display: none;
+	}
+	.burger {
+		display: flex;
+		width: 50px;
+		height: 25px;
+		border-top: 5px solid #fff;
+		border-bottom: 5px solid #fff;
+    }
+	.burger:before {
+		content: "";
+		position: relative;
+		top: 5px;
+		left: 0px;
+		width: 100%;
+		border-top: 5px solid #fff;
+    }
+}

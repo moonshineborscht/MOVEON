@@ -1,0 +1,169 @@
+.section-2 {
+    display: flex;
+    width: 100%;
+    padding-bottom: 240px;
+    color: #000000
+}
+
+.section-2 .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Функционал-блок */
+.section-2 .container .functional-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1455px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Заголовок */
+.section-2 .container .functional-block .title {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 66px;
+    text-align: center;
+    padding-bottom: 23px;
+}
+
+/* Описание под заголовком */
+.section-2 .container .functional-block .subtitle {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    opacity: 0.5;
+    text-align: center;
+    padding-bottom: 101px;
+}
+
+/* Обертка с двумя столбцами и картинкой */
+.section-2 .container .functional-block .list-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1455px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Картинка с телефоном */
+.section-2 .container .functional-block .list-wrapper .iphone-img {
+    width: 100%;
+    max-width: 438px;
+}
+
+/* Столбцы с пунктами */
+.section-2 .container .functional-block .list-wrapper .list-collumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    max-width: 437px;
+}
+
+/* Пункты с названием, описанием и картинкой */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ширина пункта с названием и описанием */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element {
+    width: 100%;
+    max-width: 321px;
+}
+
+/* Название пункта */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: right;
+    margin-bottom: 11px;
+}
+
+/* Описание пункта */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-description {
+    text-align: right;
+    opacity: 0.5;
+}
+
+/* Название пункта второго столбца */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-title-second-col {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+/* Описание пункта второго столбца */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-description-second-col {
+    text-align: left;
+    opacity: 0.5;
+}
+
+/* Картинка с фоном */
+.section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, #8253D8 0%, #D05DDE 100%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 90px;
+    max-width: 90px;
+}
+
+@media (max-width: 1200px) {
+    .section-2 {
+
+	}
+}
+
+@media (max-width: 768px) {
+    .section-2 {
+        padding-bottom: 206px;
+    }
+    /* Обертка с двумя столбцами и картинкой */
+	.section-2 .container .functional-block .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Пункты с названием, описанием и картинкой */
+    .section-2 .container .functional-block .list-wrapper .list-collumn .list-item { padding-bottom: 41px;}
+    /* Описание под заголовком */
+    .section-2 .container .functional-block .subtitle {
+        padding-bottom: 5px;
+    }
+    /* Название пункта второго столбца */
+    .section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-title, .list-title-second-col {
+        text-align: left;
+        margin-bottom: 11px;
+    }
+    /* Картинка с телефоном */
+    .section-2 .container .functional-block .list-wrapper .iphone-img {
+        padding-bottom: 51px;
+}
+    /* Описание пункта второго столбца */
+    .section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element .list-description, .list-description-second-col {
+        text-align: left;
+        opacity: 0.5;
+    }
+
+    /* Картинка с фоном */
+    .section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-img {
+        order: -1;
+    }
+    .section-2 .container .functional-block .list-wrapper .list-collumn .list-item .list-element {
+        padding: 33px 0;
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+a:hover {
+    color: #D6CEE1;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background:
+    url('../img/background/background-violet.png') top no-repeat,
+    url('../img/background/background-gray.png') top no-repeat,
+    url('../img/background/background-footer.png') bottom no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 768px) {
+	.page-wrapper {
+		background: 
+        url("../img/background-mobile/background-violet.png") top no-repeat,
+		url("../img/background-mobile/background-gray.png") top no-repeat,
+		url("../img/background-mobile/background-footer.png") bottom no-repeat;
+        background-size: contain;
+	}
+}
+
